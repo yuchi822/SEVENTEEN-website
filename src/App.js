@@ -1,38 +1,29 @@
+// src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './components/Home';
-import Members from './components/Members';
-import Discography from './components/Discography';
-import News from './components/News';
-import SocialMedia from './components/SocialMedia';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+
+// 导入组件
+import Home from './Home';  // 假设 Home.js 在 src 目录下
+import Members from './Members';  // 假设 Members.js 在 src 目录下
+import Discography from './Discography';  // 假设 Discography.js 在 src 目录下
+import News from './News';  // 假设 News.js 在 src 目录下
+import SocialMedia from './SocialMedia';  // 假设 SocialMedia.js 在 src 目录下
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a className="navbar-brand" href="/">SEVENTEEN</a>
-          <div className="navbar-nav">
-            <a className="nav-item nav-link" href="/">Home</a>
-            <a className="nav-item nav-link" href="/members">Members</a>
-            <a className="nav-item nav-link" href="/discography">Discography</a>
-            <a className="nav-item nav-link" href="/news">News</a>
-            <a className="nav-item nav-link" href="/socialmedia">Social Media</a>
-          </div>
-        </nav>
+    <div className="App">
+      <h1>Welcome to Seventeen's Website</h1>
 
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/members" component={Members} />
-          <Route path="/discography" component={Discography} />
-          <Route path="/news" component={News} />
-          <Route path="/socialmedia" component={SocialMedia} />
-        </Switch>
-      </div>
-    </Router>
+      {/* 配置路由 */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/members" element={<Members />} />
+        <Route path="/discography" element={<Discography />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/social" element={<SocialMedia />} />
+      </Routes>
+    </div>
   );
 }
 
 export default App;
-
