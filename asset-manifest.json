@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/SEVENTEEN-website/static/css/main.6d5e23b5.css",
+    "main.js": "/SEVENTEEN-website/static/js/main.62f1a97d.js",
+    "static/js/453.5497b7ec.chunk.js": "/SEVENTEEN-website/static/js/453.5497b7ec.chunk.js",
+    "static/media/hero.jpg": "/SEVENTEEN-website/static/media/hero.da2d0cc57ec123857233.jpg",
+    "index.html": "/SEVENTEEN-website/index.html",
+    "main.6d5e23b5.css.map": "/SEVENTEEN-website/static/css/main.6d5e23b5.css.map",
+    "main.62f1a97d.js.map": "/SEVENTEEN-website/static/js/main.62f1a97d.js.map",
+    "453.5497b7ec.chunk.js.map": "/SEVENTEEN-website/static/js/453.5497b7ec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d5e23b5.css",
+    "static/js/main.62f1a97d.js"
+  ]
+}
