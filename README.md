@@ -1,10 +1,9 @@
-# Writing the README content to a file
-readme_content = """
+
 # SEVENTEEN Official Website
 
 這是一個基於 React 建立的 SEVENTEEN 官方網站模擬專案，包含成員介紹、專輯資訊以及其他功能。網站已部署至 GitHub Pages，提供預覽。
 
-## 專案預覽
+## GitHub Pages
 訪問以下連結以查看網站：[SEVENTEEN 官方網站](https://yuchi822.github.io/SEVENTEEN-website/)
 
 ## 項目特色
