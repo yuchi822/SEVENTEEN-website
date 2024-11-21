@@ -1,0 +1,87 @@
+/* 主頁容器 */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url('/home.jpg');
+    background-color: #d5e4eb; /* 簡約淺藍背景 */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  /* 導航欄 */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .navbar-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .navbar-links li a:hover {
+    color: #f39c12; /* 橙色高亮效果 */
+  }
+  
+  /* 中央內容 */
+  .center-content {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* 底部社交欄 */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .footer-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .footer-social-links a:hover {
+    color: #f39c12; /* 橙色高亮效果 */
+  }
+  
