@@ -1,7 +1,7 @@
 
 # SEVENTEEN Official Website
 
-這是一個基於 React 建立的 SEVENTEEN 官方網站模擬專案，包含成員介紹、專輯資訊以及其他功能。網站已部署至 GitHub Pages，提供預覽。
+因為我們想讓更多人好好的認識SEVENTEEN這個團體，所以我們用 React 製作了 SEVENTEEN 的介紹網站，裡面包含成員介紹、專輯資訊以及其他功能。希望能有更多人喜歡及了解小13。
 
 ## GitHub Pages
 訪問以下連結以查看網站：[SEVENTEEN 官方網站](https://yuchi822.github.io/SEVENTEEN-website/)
