@@ -1,0 +1,6 @@
+[
+    { "id": 1, "name": "S.Coups", "role": "Leader, Rapper", "image": "/images/scoups.jpg" },
+    { "id": 2, "name": "Jeonghan", "role": "Vocalist", "image": "/images/jeonghan.jpg" },
+    { "id": 3, "name": "Joshua", "role": "Vocalist", "image": "/images/joshua.jpg" }
+  ]
+  
