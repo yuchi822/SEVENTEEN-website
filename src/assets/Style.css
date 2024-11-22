@@ -50,3 +50,13 @@ footer a:hover {
 .social-media-list li a:hover {
   color: #ff9900; /* 滑鼠懸停變橘色 */
 }
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 150px); /* 減去標題列和底部高度 */
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
