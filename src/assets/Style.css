@@ -1,0 +1,52 @@
+footer {
+  position: fixed; /* 固定在頁面底部 */
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 黑色半透明 */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 10; /* 確保在所有內容之上 */
+  font-size: 14px;
+}
+
+footer a {
+  color: white; /* 保持白色文字 */
+  margin: 0 15px; /* 每個連結之間的間距 */
+  text-decoration: none; /* 移除底線 */
+}
+
+footer a:hover {
+  color: orange; /* 滑鼠移上去時變為橘色 */
+}
+
+
+.social-media {
+  background-color: #000; /* 黑色背景 */
+  color: #fff; /* 白色文字 */
+  text-align: center;
+  padding: 20px 0;
+  position: fixed; /* 固定在頁面底端 */
+  bottom: 0;
+  width: 100%;
+}
+
+.social-media-list {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* 置中 */
+  align-items: center;
+  gap: 20px; /* 空格距離 */
+  margin: 0;
+  padding: 0;
+}
+
+.social-media-list li a {
+  color: #fff; /* 白色連結 */
+  text-decoration: none; /* 移除底線 */
+  font-size: 16px;
+}
+
+.social-media-list li a:hover {
+  color: #ff9900; /* 滑鼠懸停變橘色 */
+}

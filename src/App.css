@@ -1,30 +1,100 @@
-/* 通用樣式 */
 body {
-  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
   color: #333;
 }
 
-h1, h2, h3 {
-  color: #ff3366; /* SEVENTEEN 主題顏色 */
-}
-
-h1 {
-  font-size: 36px;
-  font-weight: bold;
-}
-
-.member-card, .album-card {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 10px;
-  margin: 10px 0;
+.app {
   text-align: center;
 }
 
-.member-card img, .album-card img {
+.app-header {
+  position: fixed;
   width: 100%;
-  max-width: 200px;
-  margin-bottom: 10px;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.5); /* 半透明 */
+  backdrop-filter: blur(5px); /* 背景模糊 */
+  padding: 20px 0;
+  transition: background-color 0.3s, color 0.3s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.app-header:hover {
+  background-color: rgba(255, 255, 255, 0.9); /* 滑鼠移上後變色 */
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff5722; /* 滑鼠移上後的顏色 */
+  text-decoration: underline;
+}
+
+.nav-links .active {
+  color: #ff5722;
+  text-decoration: underline;
+}
+
+.main-section {
+  margin-top: 100px; /* 頂端列的高度 */
+  padding: 20px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.featured-song, .members, .albums {
+  margin: 40px 0;
+}
+
+.app-footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.footer-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-icons a:hover {
+  color: #ff5722;
+}
