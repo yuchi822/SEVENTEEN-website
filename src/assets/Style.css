@@ -29,6 +29,18 @@ footer a:hover {
   position: fixed; /* 固定在頁面底端 */
   bottom: 0;
   width: 100%;
+  z-index: 5; /* 確保在最底層 */
+}
+
+/* 社交媒體鏈接樣式 */
+.social-media a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: orange; /* 橘色懸停效果 */
 }
 
 .social-media-list {
@@ -59,4 +71,5 @@ footer a:hover {
   color: white;
   font-size: 24px;
   text-align: center;
+  padding-bottom: 150px; /* 為內容區域添加底部填充 */
 }
