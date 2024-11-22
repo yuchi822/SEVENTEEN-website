@@ -4,57 +4,7 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #f9f9f9;
   color: #333;
-}
-
-.app {
-  text-align: center;
-}
-
-.app-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.5); /* 半透明 */
-  backdrop-filter: blur(5px); /* 背景模糊 */
-  padding: 20px 0;
-  transition: background-color 0.3s, color 0.3s;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.app-header:hover {
-  background-color: rgba(255, 255, 255, 0.9); /* 滑鼠移上後變色 */
-}
-
-.nav-links {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  font-weight: bold;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #ff5722; /* 滑鼠移上後的顏色 */
-  text-decoration: underline;
-}
-
-.nav-links .active {
-  color: #ff5722;
-  text-decoration: underline;
-}
-
-.main-section {
-  margin-top: 100px; /* 頂端列的高度 */
-  padding: 20px;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 .background {
@@ -69,7 +19,78 @@ body {
   z-index: -1;
 }
 
-.featured-song, .members, .albums {
+.app {
+  text-align: center;
+}
+
+/* 頂部導航欄樣式 */
+.app-header {
+  background-color: rgba(255, 255, 255, 0.9); /* 白色，帶透明度 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加陰影 */
+  transition: background-color 0.3s ease;
+}
+
+/* 左側 LOGO 樣式 */
+.app-header h1 {
+  color: #333; /* 深色字體 */
+  margin: 0;
+  font-size: 24px;
+}
+
+/* 導航連結樣式 */
+.nav-links {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333; /* 深色字體 */
+  font-size: 25px;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+/* 滑鼠懸停時，連結變為橘色 */
+.nav-links a:hover {
+  color: #f78c35; /* 橘色 */
+}
+
+/* 當前頁面連結樣式 */
+.nav-links .active {
+  color: #f78c35; /* 橘色 */
+}
+
+.main-section {
+  margin-top: 100px;
+  /* 頂端列的高度 */
+  padding: 20px;
+}
+
+.main-content {
+  background-color: rgba(255, 255, 255, 0.8); /* 白色，帶透明度 */
+  padding: 20px;
+  margin: 80px auto 0 auto; /* 頂部留出空間給導航欄 */
+  width: 80%;
+  max-width: 1200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加陰影 */
+  border-radius: 8px; /* 圓角 */
+}
+
+
+.featured-song,
+.members,
+.albums {
   margin: 40px 0;
 }
 
