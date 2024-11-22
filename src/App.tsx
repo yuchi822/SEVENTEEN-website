@@ -17,6 +17,7 @@ const App: React.FC = () => {
           <h1>SEVENTEEN</h1>
           <nav className="nav-links">
           <NavLink to="/"className={({ isActive }) => (isActive ? 'active' : '')}>
+          首頁
           </NavLink>
             <NavLink to="/members" className={({ isActive }) => (isActive ? "active" : undefined)}>
               成員
