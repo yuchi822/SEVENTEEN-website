@@ -2,13 +2,105 @@
   {
     "id": 1,
     "name": "S.COUPS",
-    "role": "Leader, Rapper",
+    "team": "Hip-Hop",
+    "birthday": "1995-08-08",
+    "nationality": "South Korea",
     "photo": "/images/scoups.jpg"
   },
   {
     "id": 2,
-    "name": "JEONGHAN",
-    "role": "Vocalist",
+    "name": "淨漢",
+    "team": "Vocal",
+    "birthday": "1995-10-04",
+    "nationality": "South Korea",
+    "photo": "/images/jeonghan.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Joshua",
+    "team": "Vocal",
+    "birthday": "1995-12-30",
+    "nationality": "United States",
+    "photo": "/images/jeonghan.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Jun",
+    "team": "Performance",
+    "birthday": "1996-06-10",
+    "nationality": "China",
+    "photo": "/images/jeonghan.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Hoshi",
+    "team": "Performance",
+    "birthday": "1996-06-15",
+    "nationality": "South Korea",
+    "photo": "/images/jeonghan.jpg"
+  },
+  {
+    "id": 6,
+    "name": "圓佑",
+    "team": "Hip-Hop",
+    "birthday": "1996-07-17",
+    "nationality": "South Korea",
+    "photo": "/images/jeonghan.jpg"
+  },
+  {
+    "id": 7,
+    "name": "WOOZI",
+    "team": "Vocal",
+    "birthday": "1996-11-22",
+    "nationality": "South Korea",
+    "photo": "/images/jeonghan.jpg"
+  },
+  {
+    "id": 8,
+    "name": "DK",
+    "team": "Vocal",
+    "birthday": "1997-02-18",
+    "nationality": "South Korea",
+    "photo": "/images/jeonghan.jpg"
+  },
+  {
+    "id": 9,
+    "name": "珉奎",
+    "team": "Hip-Hop",
+    "birthday": "1997-04-06",
+    "nationality": "South Korea",
+    "photo": "/images/jeonghan.jpg"
+  },
+  {
+    "id": 10,
+    "name": "THE 8",
+    "team": "Performance",
+    "birthday": "1997-11-07",
+    "nationality": "China",
+    "photo": "/images/jeonghan.jpg"
+  },
+  {
+    "id": 11,
+    "name": "勝寛",
+    "team": "Vocal",
+    "birthday": "1998-01-16",
+    "nationality": "South Korea",
+    "photo": "/images/jeonghan.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Vernon",
+    "team": "Hip-Hop",
+    "birthday": "1998-02-18",
+    "nationality": "United States",
+    "photo": "/images/jeonghan.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Dino",
+    "team": "Performance",
+    "birthday": "1999-02-11",
+    "nationality": "South Korea",
     "photo": "/images/jeonghan.jpg"
   }
 ]

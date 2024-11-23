@@ -1,20 +1,29 @@
 import React from 'react';
-import membersData from './assets/members.json';
+import membersData from './assets/members.json'; // 確保路徑正確
 
 const Members: React.FC = () => {
   return (
-    <section className="members">
-      <h2>成員介紹</h2>
-      <div className="members-grid">
+    <div>
+      <h1>成員列表</h1>
+      <ul>
         {membersData.map((member) => (
-          <div key={member.id} className="member-card">
-            <img src={member.photo} alt={member.name} />
-            <h3>{member.name}</h3>
-            <p>{member.role}</p>
-          </div>
+          <li key={member.id}>
+            <img
+              src={member.photo}
+              alt={member.name}
+              style={{ width: '100px', borderRadius: '50%' }}
+            />
+            <div>
+              <h2>{member.name}</h2>
+              <p>小分隊: {member.team}</p>
+              <p>生日: {member.birthday}</p>
+              <p>國籍: {member.nationality}</p>
+            </div>
+
+          </li>
         ))}
-      </div>
-    </section>
+      </ul>
+    </div>
   );
 };
 
