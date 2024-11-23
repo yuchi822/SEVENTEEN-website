@@ -31,13 +31,10 @@ const App: React.FC = () => (
 
         <main>
           <Routes>
-            {/* 首頁 */}
             <Route path="/" element={<Home />} />
-            {/* 功能頁面 */}
             <Route path="/members" element={<Members />} />
             <Route path="/albums" element={<Albums />} />
             <Route path="/featured-song" element={<FeaturedSong />} />
-            {/* 預設導向首頁 */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
@@ -52,7 +49,7 @@ const App: React.FC = () => (
 const BackgroundManager: React.FC = () => {
   const location = useLocation();
 
-  // 判斷當前頁面是否是首頁
+
   const isHomePage = location.pathname === '/';
 
   useEffect(() => {
@@ -65,7 +62,7 @@ const BackgroundManager: React.FC = () => {
     }
   }, [isHomePage]);
 
-  return null; // 背景管理邏輯不需要返回任何 DOM 結構
+  return null;
 };
 
 export default App;
