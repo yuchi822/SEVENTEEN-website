@@ -2,9 +2,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #f9f9f9;
   color: #333;
   font-family: 'Noto Sans TC', sans-serif;
+  background-image: url('./assets/images/background.jpg'); /* 替換為正確的背景圖片路徑 */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* 確保背景固定 */
+  background-repeat: no-repeat;
 }
 
 /* 全域背景圖片樣式 */

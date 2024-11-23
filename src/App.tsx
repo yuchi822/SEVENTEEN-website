@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, NavLink, useLocation } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, NavLink, useLocation, Navigate } from 'react-router-dom';
 import './App.css';
 import Members from './Members';
 import Albums from './Albums';
@@ -9,8 +9,8 @@ import Home from './Home';
 
 const App: React.FC = () => (
   <Router>
+    <BackgroundManager />
     <div className="app">
-      <Background />
       <div className="content">
         <header className="app-header">
           <NavLink to="/" className="logo-link">
@@ -31,13 +31,17 @@ const App: React.FC = () => (
 
         <main>
           <Routes>
+            {/* 首頁 */}
             <Route path="/" element={<Home />} />
+            {/* 功能頁面 */}
             <Route path="/members" element={<Members />} />
             <Route path="/albums" element={<Albums />} />
             <Route path="/featured-song" element={<FeaturedSong />} />
+            {/* 預設導向首頁 */}
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
-        <footer className="social-media">
+        <footer className="app-footer">
           <SocialMedia />
         </footer>
       </div>
@@ -45,16 +49,23 @@ const App: React.FC = () => (
   </Router>
 );
 
-const Background: React.FC = () => {
+const BackgroundManager: React.FC = () => {
   const location = useLocation();
 
-  // 判斷當前頁面是否需要白色背景
-  const isWhiteBackgroundPage =
-    location.pathname === '/members' ||
-    location.pathname === '/albums' ||
-    location.pathname === '/featured-song';
+  // 判斷當前頁面是否是首頁
+  const isHomePage = location.pathname === '/';
 
-  return <div className={isWhiteBackgroundPage ? 'white-page-background' : 'background'} />;
+  useEffect(() => {
+    if (isHomePage) {
+      document.body.classList.remove('white-page-background');
+      document.body.classList.add('homepage-background');
+    } else {
+      document.body.classList.remove('homepage-background');
+      document.body.classList.add('white-page-background');
+    }
+  }, [isHomePage]);
+
+  return null; // 背景管理邏輯不需要返回任何 DOM 結構
 };
 
 export default App;
