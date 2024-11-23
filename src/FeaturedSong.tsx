@@ -1,110 +1,38 @@
 import React from 'react';
+import './FeaturedSong.css';
 
 const FeaturedSong: React.FC = () => {
+  const songs = [
+    { name: "Adore U", src: "https://www.youtube.com/watch?v=9rUFQJrCT7M", thumbnail: "https://img.youtube.com/vi/9rUFQJrCT7M/0.jpg" },
+    { name: "MANSAE", src: "https://www.youtube.com/watch?v=9M7k9ZV67c0", thumbnail: "https://img.youtube.com/vi/9M7k9ZV67c0/0.jpg" },
+    { name: "Pretty U", src: "https://www.youtube.com/watch?v=j59LLNMEOZk", thumbnail: "https://img.youtube.com/vi/j59LLNMEOZk/0.jpg" },
+    { name: "VERY NICE", src: "https://www.youtube.com/watch?v=J-wFp43XOrA", thumbnail: "https://img.youtube.com/vi/J-wFp43XOrA/0.jpg" },
+    { name: "BOOMBOOM", src: "https://www.youtube.com/watch?v=IzplmS-VeBc", thumbnail: "https://img.youtube.com/vi/IzplmS-VeBc/0.jpg" },
+    { name: "Don't Wanna Cry", src: "https://www.youtube.com/watch?v=zEkg4GBQumc", thumbnail: "https://img.youtube.com/vi/zEkg4GBQumc/0.jpg" },
+    { name: "Clap", src: "https://www.youtube.com/watch?v=CyzEtbG-sxY", thumbnail: "https://img.youtube.com/vi/CyzEtbG-sxY/0.jpg" },
+    { name: "THANKS", src: "https://www.youtube.com/watch?v=gZItyr1SNjU", thumbnail: "https://img.youtube.com/vi/gZItyr1SNjU/0.jpg" },
+    { name: "Oh My!", src: "https://www.youtube.com/watch?v=_5PELxP8Udg", thumbnail: "https://img.youtube.com/vi/_5PELxP8Udg/0.jpg" },
+  ];
+
   return (
     <section className="featured-song">
-      <div style={{ marginBottom: '20px' }}>
-        <h3>SEVENTEEN - Eyes on you</h3>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/JjvX09nG2F0"
-          title="SEVENTEEN - Eyes on you"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </div>
+      <h2>主打歌 - HOT</h2>
       
-      <div style={{ marginBottom: '20px' }}>
-        <h3>SEVENTEEN - LOVE, MONEY, FAME</h3>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/5NPe8_gDSr4"
-          title="SEVENTEEN - LOVE, MONEY, FAME"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>        
-      </div>
-
-      <div style={{ marginBottom: '20px' }}>
-        <h3>SEVENTEEN - 청춘찬가</h3>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/bw4AuPrLWeA"
-          title="SEVENTEEN - 청춘찬가"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>        
-      </div>
-      
-      <div style={{ marginBottom: '20px' }}>
-        <h3>SEVENTEEN - Spell</h3>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/gbLkxltoD9o"
-          title="SEVENTEEN - Spell"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>        
-      </div>
-
-      <div style={{ marginBottom: '20px' }}>
-        <h3>SEVENTEEN - LALALI</h3>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/F2qZWD0F7rM"
-          title="SEVENTEEN - LALALI"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>        
-      </div>
-
-      <div style={{ marginBottom: '20px' }}>
-        <h3>SEVENTEEN - MAESTRO</h3>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/ThI0pBAbFnk"
-          title="SEVENTEEN - MAESTRO"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>        
-      </div>
-
-      <div style={{ marginBottom: '20px' }}>
-        <h3>SEVENTEEN - 음악의 신</h3>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/zSQ48zyWZrY"
-          title="SEVENTEEN - 음악의 신"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>        
-      </div>
-
-      <div style={{ marginBottom: '20px' }}>
-        <h3>SEVENTEEN - 今 -明日 世界が終わっても-</h3>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/vvN4FgqNXwE"
-          title="SEVENTEEN - 今 -明日 世界が終わっても-"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>        
+      <div className="song-list">
+        {songs.map((song, index) => (
+          <div key={index} className="song-item">
+            <div className="song-thumbnail-container">
+              <a href={song.src} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={song.thumbnail}
+                  alt={song.name}
+                  className="song-thumbnail"
+                />
+              </a>
+            </div>
+            <h3>{song.name}</h3>
+          </div>
+        ))}
       </div>
     </section>
   );
