@@ -20,20 +20,6 @@ body {
   transition: filter 0.3s ease-in-out;
 }
 
-/* 背景圖片容器 */
-.background {
-  position: fixed; /* 固定位置，覆蓋整個頁面 */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('./assets/images/background.jpg'); /* 確保路徑正確 */
-  background-size: cover;
-  background-position: center;
-  z-index: -1; /* 保持在最底層 */
-  transition: filter 0.3s ease-in-out;
-}
-
 /* 當需要模糊時 */
 .background.blurred {
   filter: blur(8px); /* 添加模糊效果 */
@@ -110,43 +96,49 @@ body {
   overflow: visible; /* 讓內容不被裁剪 */
   z-index: 100;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加陰影 */
-  transition: background-color 0.5s ease; /* 平滑過渡效果 */
+  transition: background-color 0.5s ease, color 0.5s ease;
   box-sizing: border-box; /* 讓寬度包含 padding 和 border */
+}
+
+/* 左側 LOGO 樣式 */
+.app-header h1 {
+  color: white; /* 初始為白色 */
+  margin: 0;
+  font-size: 20px;
+  transition: color 0.5s ease; /* 平滑過渡顏色 */
 }
 
 .app-header:hover {
   background-color: rgba(255, 255, 255, 1); /* 背景變為不透明白色 */
 }
 
-/* 左側 LOGO 樣式 */
-.app-header h1 {
-  color: #333; /* 深色字體 */
-  margin: 0;
-  font-size: 20px;
+.app-header:hover h1 {
+  color: #333; /* LOGO字體變為深色 */
 }
 
-
-/* 導航連結樣式 */
 .nav-links {
   display: flex;
-  gap: 30px;
+  gap: 15px;
   justify-content: center;
   box-sizing: border-box; /* 讓寬度包含 padding 和 border */
-  
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #333; /* 深色字體 */
-  font-size: 25px;
+  color: white; /* 初始為白色 */
+  font-size: 20px;
   font-weight: 500;
   padding: 5px 5px;
-  transition: color 0.3s ease;
+  transition: color 0.5s ease; /* 平滑過渡顏色 */
+}
+
+.app-header:hover .nav-links a {
+  color: #333; /* 深色字體 */
 }
 
 /* 滑鼠懸停時，連結變為橘色 */
 .nav-links a:hover {
-  color: #f78c35; /* 橘色 */
+  color: #f78c35!important;; /* 橘色 */
 }
 
 /* 當前頁面連結樣式 */
