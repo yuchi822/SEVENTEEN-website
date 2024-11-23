@@ -6,35 +6,31 @@ ul {
 
 li {
     flex: 1 1 calc(33.33% - 20px);
-    /* 三欄佈局 */
     max-width: 125px;
 }
 
 @media (max-width: 768px) {
     li {
         flex: 1 1 calc(50% - 20px);
-        /* 兩欄佈局 */
     }
 }
 
 @media (max-width: 480px) {
     li {
         flex: 1 1 100%;
-        /* 單欄佈局 */
     }
 }
 
 .Introduction {
-    display: block; /* 區塊級顯示 */
-    width: 100%;    /* 佔據整個容器寬度 */
-    background-color: #e0e0e0; /* 背景顏色 */
-    padding: 20px;  /* 內邊距 */
+    display: block; 
+    width: 100%;    
+    background-color: #e0e0e0; 
+    padding: 20px;  
     
-    margin-top: 60px; /* 向下移動 50px */
+    margin-top: 60px; 
   }
   
 
-/* 基本的卡片容器樣式 */
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -42,20 +38,15 @@ li {
     list-style: none;
     padding: 0;
     justify-content: center;
-    /* 水平置中 */
     align-items: center;
-    /* 垂直置中 */
     width: 100%;
-    /* 使容器占滿整個寬度 */
-    margin-top: 50px; /* 向下移動 50px */
+    margin-top: 50px; 
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    /* 垂直排列圖片和名字 */
     justify-content: space-between;
-    /* 讓內容在上下方向上填滿空間 */
     flex: 1 1 calc(30% - 20px);
     text-align: center;
     border-radius: 10px;
@@ -66,40 +57,29 @@ li {
 .card-name {
     padding: 10px;
     margin-top: 10px;
-    /* 和圖片之間的間距 */
     font-size: 16px;
-    /* 調整字型大小 */
     font-weight: bold;
-    /* 讓名字加粗 */
     color: black;
-    /* 白色文字 */
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     border-top: 1px solid #000000;
-    /* 在名字區域上方加一條邊框 */
 }
 
-/* 圖片容器，裁切放大到上半部 */
 .member-image {
     width: 120px;
-    /* 調整圖片寬度 */
     height: 120px;
-    /* 設定高度，確保圖片比例 */
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.2s ease;
     object-fit: cover;
-    /* 確保圖片不變形並填滿容器 */
     object-position: top;
-    /* 裁切圖片並顯示上半部 */
 }
 
 .member-image:hover {
     transform: scale(1.05);
 }
 
-/* 模態框遮罩層 */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -107,58 +87,44 @@ li {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    /* 半透明黑色背景 */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
 }
 
-/* 模態框內容區 */
 .modal-content {
     background: #fff;
     padding: 20px;
     border-radius: 10px;
     position: relative;
     max-width: 900px;
-    /* 最大寬度 */
     width: 100%;
 }
 
-/* 模態框內部圖片和資訊 */
 .modal-body {
     display: flex;
     align-items: center;
-    /* 垂直居中 */
     gap: 20px;
-    /* 之間的空白間距 */
 }
 
-/* 模態框圖片樣式 */
 .modal-image {
     width: 200px;
-    /* 增大圖片寬度 */
     height: 300px;
     border-radius: 10px;
     object-fit: cover;
-    /* 保持圖片比例和填滿容器 */
 }
 
-/* 模態框資訊區 */
 .modal-info {
     flex: 1;
-    /* 填滿剩餘空間 */
 }
 
-/* 關閉按鈕 */
 .close-modal {
     position: absolute;
     top: 10px;
     right: 10px;
     background-color: #607fe4;
-    /* 紅色背景 */
     color: #fff;
-    /* 白色文字 */
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -167,6 +133,5 @@ li {
 }
 
 .close-modal:hover {
-    background-color: #607fe4;
-    /* 當懸停時顯示更深的紅色 */
+    background-color: #607fe4;   
 }

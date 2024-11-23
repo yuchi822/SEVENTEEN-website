@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import membersData from './assets/members.json'; // 確保路徑正確
+import membersData from './assets/members.json'; 
 import './Members.css';
 
 const Members: React.FC = () => {
   const [selectedMember, setSelectedMember] = useState<any | null>(null);
-  const [isModalOpen, setIsModalOpen] = useState(false); // 新增模態框開關狀態
+  const [isModalOpen, setIsModalOpen] = useState(false); 
 
-  // 點擊圖片時更新選中成員資訊並開啟模態框
+  
   const handleImageClick = (member: any) => {
     setSelectedMember(member);
-    setIsModalOpen(true); // 顯示模態框
+    setIsModalOpen(true); 
   };
 
-  // 關閉模態框
+  
   const closeModal = () => {
     setIsModalOpen(false);
     setSelectedMember(null);
@@ -34,15 +34,15 @@ const Members: React.FC = () => {
               src={require(`${member.photo}`)}
               alt={member.name}
               className="member-image"
-              onClick={() => handleImageClick(member)} // 點擊時觸發
+              onClick={() => handleImageClick(member)} 
             />
-            <div className="card-name">{member.name}</div> {/* 顯示名字 */}
+            <div className="card-name">{member.name}</div> {}
           </li>
         ))}
       </ul>
       <div></div>
 
-      {/* 模態框 */}
+      {}
       {isModalOpen && selectedMember && (
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
