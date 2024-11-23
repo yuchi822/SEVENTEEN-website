@@ -20,7 +20,13 @@ const Members: React.FC = () => {
 
   return (
     <div>
-      <h1>成員列表</h1>
+      <h1></h1>
+      <div className='Introduction'>
+      SEVENTEEN是韓國Pledis娛樂旗下的13人男子流行音樂團體，<br />
+      團體有「Hiphop Team」、「Vocal Team」、「Performance Team」三個小分隊<br />
+      以及「BSS」、「JxW」兩個子團體。<br />
+      團體名字寓意為「13名成員+3個分隊+1個整體」。
+      </div>
       <ul className="card-container">
         {membersData.map((member) => (
           <li key={member.id} className="card" style={{ display: 'flex', alignItems: 'center' }}>
@@ -34,6 +40,7 @@ const Members: React.FC = () => {
           </li>
         ))}
       </ul>
+      <div></div>
 
       {/* 模態框 */}
       {isModalOpen && selectedMember && (

@@ -24,6 +24,16 @@ li {
     }
 }
 
+.Introduction {
+    display: block; /* 區塊級顯示 */
+    width: 100%;    /* 佔據整個容器寬度 */
+    background-color: #e0e0e0; /* 背景顏色 */
+    padding: 20px;  /* 內邊距 */
+    
+    margin-top: 60px; /* 向下移動 50px */
+  }
+  
+
 /* 基本的卡片容器樣式 */
 .card-container {
     display: flex;
@@ -37,6 +47,7 @@ li {
     /* 垂直置中 */
     width: 100%;
     /* 使容器占滿整個寬度 */
+    margin-top: 50px; /* 向下移動 50px */
 }
 
 .card {
@@ -45,10 +56,11 @@ li {
     /* 垂直排列圖片和名字 */
     justify-content: space-between;
     /* 讓內容在上下方向上填滿空間 */
-    flex: 1 1 calc(25% - 20px);
+    flex: 1 1 calc(30% - 20px);
     text-align: center;
     border-radius: 10px;
     padding: 1px;
+    box-sizing: border-box;
 }
 
 .card-name {
