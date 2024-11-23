@@ -1,32 +1,32 @@
 [
   {
     "id": 1,
-    "title": "Face the Sun",
-    "releaseDate": "2022-05-27",
-    "cover": "facethesun.jpg"
-  },
-  {
-    "id": 2,
-    "title": "SECTOR 17",
-    "releaseDate": "2022-07-18",
-    "cover": "SECTOR 17.png"
-  },
-  {
-    "id": 3,
     "title": "Love & Letter",
     "releaseDate": "2016-04-25",
     "cover": "LoveLetter.jpg"
   },
   {
-    "id": 4,
+    "id": 2,
     "title": "Teen, Age",
     "releaseDate": "2017-11-06",
     "cover": "teenage.jpg"
   },
   {
-    "id": 5,
+    "id": 3,
     "title": "An Ode",
     "releaseDate": "2019-09-16",
     "cover": "AnOde.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Face the Sun",
+    "releaseDate": "2022-05-27",
+    "cover": "facethesun.jpg"
+  },
+  {
+    "id": 5,
+    "title": "SECTOR 17",
+    "releaseDate": "2022-07-18",
+    "cover": "SECTOR 17.png"
   }
 ]

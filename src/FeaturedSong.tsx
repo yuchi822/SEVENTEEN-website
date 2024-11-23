@@ -3,8 +3,6 @@ import React from 'react';
 const FeaturedSong: React.FC = () => {
   return (
     <section className="featured-song">
-      <h2>主打歌 - HOT</h2>
-      
       <div style={{ marginBottom: '20px' }}>
         <h3>SEVENTEEN - Eyes on you</h3>
         <iframe
