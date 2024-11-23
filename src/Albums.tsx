@@ -1,12 +1,11 @@
 import React from 'react';
-import './Albums.css'; // 確保正確引用樣式檔案
+import './Albums.css'; 
 import albums from './assets/albums.json';
 import miniAlbum from './assets/miniAlbums.json';
 
 const Albums = () => {
   return (
     <div>
-      {/* 正規專輯區塊 */}
       <div className="albums-section">
         <h2 className="section-title">正規專輯</h2>
         <ul className="card-container">
@@ -28,8 +27,7 @@ const Albums = () => {
           ))}
         </ul>
       </div>
-
-      {/* 迷你專輯區塊 */}
+      
       <div className="mini-albums-section">
         <h2 className="section-title">迷你專輯</h2>
         <ul className="card-container">
