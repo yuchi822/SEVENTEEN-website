@@ -7,7 +7,21 @@ body {
   font-family: 'Noto Sans TC', sans-serif;
 }
 
+/* 全域背景圖片樣式 */
 .background {
+  position: fixed; /* 固定背景，避免隨頁面滾動 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/images/background.jpg'); /* 確保此路徑為背景圖片的正確位置 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* 保持背景在最底層 */
+}
+
+.homepage-background {
   position: fixed; /* 固定背景，避免隨頁面滾動 */
   top: 0;
   left: 0;
@@ -19,6 +33,13 @@ body {
   z-index: -1;
   transition: filter 0.3s ease-in-out;
 }
+
+/* 頁面背景樣式 */
+.app.white-background .background {
+  background-color: white; /* 背景變為純白 */
+  background-image: none; /* 移除圖片 */
+}
+
 
 /* 當需要模糊時 */
 .background.blurred {
@@ -144,6 +165,30 @@ body {
 /* 當前頁面連結樣式 */
 .nav-links .active {
   color: #f78c35; /* 橘色 */
+}
+
+/* 左上角 LOGO 與連結樣式 */
+.logo-link {
+  text-decoration: none; /* 移除連結下劃線 */
+}
+
+.logo-link h1 {
+  color: white; /* LOGO 字樣的顏色 */
+  margin: 0;
+  font-size: 20px;
+  transition: color 0.5s ease; /* 平滑過渡顏色 */
+}
+
+.logo-link:hover h1 {
+  color: #f78c35; /* 滑鼠懸停時 LOGO 字樣的顏色 */
+}
+
+/* 頂部導航列樣式調整 */
+.nav-links {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end; /* 將導航列置於右側 */
+  box-sizing: border-box;
 }
 
 .main-section {
