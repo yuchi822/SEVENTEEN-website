@@ -1,11 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './App.css';
 import App from './App';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const rootElement = document.getElementById('root');
+if (!rootElement) {
+  throw new Error('Root element not found. Please check public/index.html');
+}
+const root = ReactDOM.createRoot(rootElement);
+root.render(<App />);

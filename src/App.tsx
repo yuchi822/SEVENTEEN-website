@@ -10,7 +10,7 @@ import Home from './Home';
 const App: React.FC = () => (
   <Router>
     <BackgroundManager />
-    <div className="app">
+    <div className="app homepage">
       <div className="content">
         <header className="app-header">
           <NavLink to="/" className="logo-link">
