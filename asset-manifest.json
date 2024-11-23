@@ -1,16 +1,43 @@
 {
   "files": {
-    "main.css": "/SEVENTEEN-website/static/css/main.6d5e23b5.css",
-    "main.js": "/SEVENTEEN-website/static/js/main.62f1a97d.js",
-    "static/js/453.5497b7ec.chunk.js": "/SEVENTEEN-website/static/js/453.5497b7ec.chunk.js",
-    "static/media/hero.jpg": "/SEVENTEEN-website/static/media/hero.da2d0cc57ec123857233.jpg",
+    "main.css": "/SEVENTEEN-website/static/css/main.68d36898.css",
+    "main.js": "/SEVENTEEN-website/static/js/main.b41e1934.js",
+    "static/media/BOYSBE.jpg": "/SEVENTEEN-website/static/media/BOYSBE.5ac88dc6d10d8b0cf462.jpg",
+    "static/media/YOU_MADE_MY_DAWN.jpg": "/SEVENTEEN-website/static/media/YOU_MADE_MY_DAWN.3beed265e4ffb82796e7.jpg",
+    "static/media/17CARAT.jpg": "/SEVENTEEN-website/static/media/17CARAT.d8fd0e65bcb3d67a0fa7.jpg",
+    "static/media/background.jpg": "/SEVENTEEN-website/static/media/background.3e22c9648fc5f21d450f.jpg",
+    "static/media/Henggarae.jpg": "/SEVENTEEN-website/static/media/Henggarae.3ff374776f14909aa048.jpg",
+    "static/media/SEVENTEENTH_HEAVEN.jpg": "/SEVENTEEN-website/static/media/SEVENTEENTH_HEAVEN.57441e149ca65f8db846.jpg",
+    "static/media/GoingSeventeen.jpg": "/SEVENTEEN-website/static/media/GoingSeventeen.82c2f975371ac6ec2a70.jpg",
+    "static/media/SECTOR 17.png": "/SEVENTEEN-website/static/media/SECTOR 17.ac00bc4acbcc68f63905.png",
+    "static/media/SPILL_THE_FEELS.jpg": "/SEVENTEEN-website/static/media/SPILL_THE_FEELS.7fd2a0ac27416cc22414.jpg",
+    "static/media/DK.jpg": "/SEVENTEEN-website/static/media/DK.7255eb79c43266ff2180.jpg",
+    "static/media/Dino.jpg": "/SEVENTEEN-website/static/media/Dino.5b09861cb45d9c80687e.jpg",
+    "static/media/Min_Gyu.jpg": "/SEVENTEEN-website/static/media/Min_Gyu.ab1d09ff1fd49a8f88bd.jpg",
+    "static/media/Jeon_Won_Woo.jpg": "/SEVENTEEN-website/static/media/Jeon_Won_Woo.006e172435fab10f911b.jpg",
+    "static/media/woozi.jpg": "/SEVENTEEN-website/static/media/woozi.b28694a7dbb851a7bef5.jpg",
+    "static/media/Joshua.jpg": "/SEVENTEEN-website/static/media/Joshua.5a39caa0ea50ea2d9628.jpg",
+    "static/media/Vernon.jpg": "/SEVENTEEN-website/static/media/Vernon.ce7761ca11f139cc99b3.jpg",
+    "static/media/JUN.jpg": "/SEVENTEEN-website/static/media/JUN.33e96962cee15e375e1d.jpg",
+    "static/media/Seung_Kwan.jpg": "/SEVENTEEN-website/static/media/Seung_Kwan.ecff433ede29725211e0.jpg",
+    "static/media/Hoshi.jpg": "/SEVENTEEN-website/static/media/Hoshi.326a502f0c8fee515e99.jpg",
+    "static/media/YOU MAKE MY DAY.jpg": "/SEVENTEEN-website/static/media/YOU MAKE MY DAY.763d6757eafc17b6c8ba.jpg",
+    "static/media/THE_8.jpg": "/SEVENTEEN-website/static/media/THE_8.18645b1ff1f5754ab56a.jpg",
+    "static/media/Al1.jpg": "/SEVENTEEN-website/static/media/Al1.6e4f2422a555b31e31dc.jpg",
+    "static/media/S.COUPS.jpg": "/SEVENTEEN-website/static/media/S.COUPS.2b69378e46f8080ca019.jpg",
+    "static/media/LoveLetter.jpg": "/SEVENTEEN-website/static/media/LoveLetter.bb4f3eab1467af516d13.jpg",
+    "static/media/Jeong_Han.jpg": "/SEVENTEEN-website/static/media/Jeong_Han.f9d370e6e2e78f12e89a.jpg",
+    "static/media/facethesun.jpg": "/SEVENTEEN-website/static/media/facethesun.ff1adf55fc98f4010fa6.jpg",
+    "static/media/AnOde.jpg": "/SEVENTEEN-website/static/media/AnOde.985d3faca99a2a5f24ec.jpg",
+    "static/media/FML.jpg": "/SEVENTEEN-website/static/media/FML.ab7bb55e1e96533db97f.jpg",
+    "static/media/YourChoice.jpg": "/SEVENTEEN-website/static/media/YourChoice.490d9b0ee77157233f51.jpg",
+    "static/media/Attacca.jpg": "/SEVENTEEN-website/static/media/Attacca.be5b38cc1660fe6c405f.jpg",
     "index.html": "/SEVENTEEN-website/index.html",
-    "main.6d5e23b5.css.map": "/SEVENTEEN-website/static/css/main.6d5e23b5.css.map",
-    "main.62f1a97d.js.map": "/SEVENTEEN-website/static/js/main.62f1a97d.js.map",
-    "453.5497b7ec.chunk.js.map": "/SEVENTEEN-website/static/js/453.5497b7ec.chunk.js.map"
+    "main.68d36898.css.map": "/SEVENTEEN-website/static/css/main.68d36898.css.map",
+    "main.b41e1934.js.map": "/SEVENTEEN-website/static/js/main.b41e1934.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d5e23b5.css",
-    "static/js/main.62f1a97d.js"
+    "static/css/main.68d36898.css",
+    "static/js/main.b41e1934.js"
   ]
 }
