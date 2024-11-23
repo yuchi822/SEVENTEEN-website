@@ -1,9 +1,9 @@
 .albums-section {
-  margin: 40px auto; /* 置中並與其他內容保持間距 */
+  margin: 40px auto; 
   padding: 20px;
-  background-color: #f9f9f9; /* 可選：背景顏色 */
+  background-color: #f9f9f9; 
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 可選：輕微陰影效果 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .section-title {
@@ -24,7 +24,7 @@
 }
 
 .card {
-  flex: 1 1 calc(20% - 20px); /* 五列佈局 */
+  flex: 1 1 calc(20% - 20px); 
   text-align: center;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .album-image:hover {
-  transform: scale(1.05); /* 放大效果 */
+  transform: scale(1.05); 
 }
 
 .card-name {
@@ -48,9 +48,9 @@
 .mini-albums-section {
   margin: 40px auto;
   padding: 20px;
-  background-color: #f9f9f9; /* 背景顏色 */
+  background-color: #f9f9f9; 
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 輕微陰影效果 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .mini-albums-list {
