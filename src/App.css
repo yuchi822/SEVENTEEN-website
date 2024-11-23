@@ -98,7 +98,7 @@ body {
 
 /* 頂部導航欄樣式 */
 .app-header {
-  background-color: rgba(255, 255, 255, 0.9); /* 白色，帶透明度 */
+  background-color: rgba(255, 255, 255, 0); /* 初始為全透明 */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -110,8 +110,12 @@ body {
   overflow: visible; /* 讓內容不被裁剪 */
   z-index: 100;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加陰影 */
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease; /* 平滑過渡效果 */
   box-sizing: border-box; /* 讓寬度包含 padding 和 border */
+}
+
+.app-header:hover {
+  background-color: rgba(255, 255, 255, 1); /* 背景變為不透明白色 */
 }
 
 /* 左側 LOGO 樣式 */
