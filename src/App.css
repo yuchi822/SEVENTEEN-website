@@ -34,6 +34,12 @@ body {
   transition: filter 0.3s ease-in-out;
 }
 
+/* 白色背景樣式 */
+.white-page-background {
+  background-color: white; /* 背景變為純白 */
+  background-image: none; /* 移除背景圖片 */
+}
+
 /* 頁面背景樣式 */
 .app.white-background .background {
   background-color: white; /* 背景變為純白 */

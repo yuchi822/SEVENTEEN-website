@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, NavLink, useLocation } from 'react-router-dom';
 import './App.css';
 import Members from './Members';
 import Albums from './Albums';
@@ -10,13 +10,9 @@ import Home from './Home';
 const App: React.FC = () => (
   <Router>
     <div className="app">
-      {/* 背景圖片 */}
-      <div className="background"></div>
-
-      {/* 主要內容 */}
+      <Background />
       <div className="content">
         <header className="app-header">
-          {/* SEVENTEEN 與首頁連結 */}
           <NavLink to="/" className="logo-link">
             <h1>SEVENTEEN</h1>
           </NavLink>
@@ -48,5 +44,17 @@ const App: React.FC = () => (
     </div>
   </Router>
 );
+
+const Background: React.FC = () => {
+  const location = useLocation();
+
+  // 判斷當前頁面是否需要白色背景
+  const isWhiteBackgroundPage =
+    location.pathname === '/members' ||
+    location.pathname === '/albums' ||
+    location.pathname === '/featured-song';
+
+  return <div className={isWhiteBackgroundPage ? 'white-page-background' : 'background'} />;
+};
 
 export default App;
